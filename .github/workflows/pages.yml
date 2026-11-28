@@ -2,7 +2,7 @@ name: Publish mind map
 on:
   push:
     branches: [main]
-    paths: ["1-Onboarding/mind-map/**"]
+    paths: ["1-Onboarding/mind-map/**", "2-Structuring and testing data/mind-map/**"]
   workflow_dispatch:
 permissions:
   actions: read
@@ -16,7 +16,10 @@ jobs:
     environment: { name: github-pages, url: "${{ steps.d.outputs.page_url }}" }
     steps:
       - uses: actions/checkout@v4
-      - run: mkdir -p _site/1-Onboarding && cp -r 1-Onboarding/mind-map _site/1-Onboarding/
+      - run: |
+          mkdir -p "_site/1-Onboarding" "_site/2-Structuring and testing data"
+          cp -r 1-Onboarding/mind-map _site/1-Onboarding/
+          cp -r "2-Structuring and testing data/mind-map" "_site/2-Structuring and testing data/"
       - uses: actions/upload-pages-artifact@v3
         with: { path: _site }
       - id: d

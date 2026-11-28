@@ -1,5 +1,7 @@
 ## Here you can find course content and homework for the structuring and testing data module
 
+🗺️ [Mind map of every week 4-6 assignment](https://hackyourfuturebelgium.github.io/Intro-to-Programming/2-Structuring%20and%20testing%20data/mind-map/) · [source](mind-map/)
+
 | Week | Topic | Preparation | Lesson plan | Homework |
 | ---- | ----- | ----------- | -------- |------------ |
 |1.| Variables <br> Declarations and Statements <br> Functions <br> Scripts <br> Logging <br> Errors <br> Percentages <br> Defining functions <br> Playing computer <br> Scope <br> Return <br> Reuse <br> Parameters <br> Solving problems with functions|[Preparation](Week_1/1-preparation.md)|[Lesson plan](week1/lesson-plan.md)|[Homework](Week_2/3-homework.md)|
